@@ -1,0 +1,19 @@
+{
+    "name": "arsthanea/kunstmaan-system-pages-bundle",
+    "require": {
+        "kunstmaan/bundles-cms": "~3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ArsThanea\\KunstmaanSystemPagesBundle\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Maciej Łebkowski",
+            "email": "m.lebkowski@gmail.com"
+        }
+    ]
+}

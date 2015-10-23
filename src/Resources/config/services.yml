@@ -1,0 +1,10 @@
+parameters:
+    kunstmaan_system_pages.node_translation_injector.class: ArsThanea\KunstmaanSystemPagesBundle\EventListener\NodeTranslationInjectorListener
+
+services:
+  kunstmaan_system_pages.node_translation_injector:
+    class: %kunstmaan_system_pages.node_translation_injector.class%
+    arguments: [ @doctrine.orm.entity_manager, @twig, %defaultlocale% ]
+    tags:
+      - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+
